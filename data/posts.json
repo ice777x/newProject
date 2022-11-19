@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "title": "Preview Mode for Static Generation",
+    "image": "/peaco.jpg",
+    "content": "This is a preview mode for static generation",
+    "author": {"username": "bsggr78", "name": "BasarJS"},
+    "date": "21 May 2020",
+    "icon": "/peaco.jpg",
+    "likes": 0,
+    "comment": 0,
+    "saved": 0,
+    "tags": ["typescript", "js"]
+  },
+  {
+    "id": 2,
+    "title": "test",
+    "image": "/peaco.jpg",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus accusantium dolor odio sunt hic quod esse, nihil temporibus autem.",
+    "author": {"name": "test", "username": "test"},
+    "date": "test",
+    "icon": "/Tau_Film.png",
+    "likes": 0,
+    "comment": 0,
+    "saved": 0,
+    "tags": ["test", "test2"]
+  },
+  {
+    "id": 3,
+    "title": "test",
+    "image": "/peaco.jpg",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus accusantium dolor odio sunt hic quod esse, nihil temporibus autem.",
+    "author": {"name": "test", "username": "test"},
+    "date": "test",
+    "icon": "/restapi.png",
+    "likes": 0,
+    "comment": 0,
+    "saved": 0,
+    "tags": ["test", "test2"]
+  }
+]
