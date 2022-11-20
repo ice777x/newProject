@@ -1,7 +1,7 @@
 import React from "react";
 
 async function getUsers() {
-  const posts = await fetch("http://localhost:3000/api/users/add", {
+  const posts = await fetch("/api/users/add", {
     method: "POST",
     body: JSON.stringify({
       name: "BasarJS",

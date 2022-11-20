@@ -6,7 +6,7 @@ import Sidebar from "../components/Sidebar";
 import {Post} from "../typings";
 
 async function getPosts() {
-  const posts = await fetch("http://localhost:3000/api/posts");
+  const posts = await fetch("/api/posts");
   const result = await posts.json();
   return result;
 }
