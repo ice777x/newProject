@@ -14,7 +14,7 @@ export async function generateStaticParams() {
 export default async function Page({params: {name}}: {params: {name: string}}) {
   const user = await getUsers();
   const filteredUser = user.filter(
-    (user: {username: string}) => user.username === name
+    (user: {username: string}) => user?.username === name
   );
   if (filteredUser.length > 0) {
     return (

@@ -14,12 +14,11 @@ async function getPosts() {
 async function Home() {
   const posts = await getPosts();
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-[auto_75%] md:grid-cols-[20%_60%_auto] p-4 gap-2 md:gap-4 lg:gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-[auto_75%] md:grid-cols-[15%_55%_auto] p-3 gap-2 md:gap-3 lg:gap-6">
       <Sidebar />
       <div className="">
         <div className="mb-20">
-          <h1 className="text-4xl font-bold">Posts</h1>
-          <div className="grid-cols-1  mt-8 md:grid-cols-2  gap-x-4 md:gap-x-8 gap-y-10 md:gap-y-12">
+          <div>
             {posts &&
               posts?.map((post: Post, i: number) => (
                 <PostComp post={post} key={i} />
@@ -27,7 +26,7 @@ async function Home() {
           </div>
         </div>
       </div>
-      <RightBar />
+      <RightBar posts={posts} />
     </div>
   );
 }

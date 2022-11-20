@@ -7,6 +7,7 @@ const disableCss = {
 };
 
 module.exports = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -22,13 +23,11 @@ module.exports = {
       },
     },
     extend: {
-      darkMode: "class",
       typography: {
         DEFAULT: {
           css: {
             ...disableCss,
             a: {
-              fontSize: "16px",
               color: "rgb(0,113,230)",
               textDecoration: "none",
               "&:hover": {
@@ -48,5 +47,6 @@ module.exports = {
   plugins: [
     require("@tailwindcss/line-clamp"),
     require("@tailwindcss/typography"),
+    require("tailwind-scrollbar")({nocompatible: true}),
   ],
 };

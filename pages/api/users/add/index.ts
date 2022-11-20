@@ -14,9 +14,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       website,
       socials: {facebook, twitter, instagram, linkedin, youtube, github},
     } = JSON.parse(req.body);
-    if (fs.existsSync(path.join(process.cwd(), "data", "posts.json"))) {
+    if (fs.existsSync(path.join(process.cwd(), "data", "users.json"))) {
       const users = JSON.parse(
-        fs.readFileSync(path.join(process.cwd(), "data", "posts.json"), "utf-8")
+        fs.readFileSync(path.join(process.cwd(), "data", "users.json"), "utf-8")
       );
       const newUser = {
         id: users.length + 1,
