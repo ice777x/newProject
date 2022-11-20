@@ -6,7 +6,7 @@ import Link from "next/link";
 import RightBar from "../../../components/RightBar";
 
 async function getPosts(): Promise<[Post[], any]> {
-  return Promise.all([fetch("/api/posts/"), fetch("/api/users/")]).then(
+  return Promise.all([fetch("/api/posts"), fetch("/api/users")]).then(
     async ([posts, users]) => {
       const post: Post[] = await posts.json();
       const user: any = await users.json();

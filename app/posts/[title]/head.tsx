@@ -2,7 +2,7 @@ import React from "react";
 import {redirect} from "next/navigation";
 
 async function getPosts() {
-  const posts = await fetch("/api/posts/");
+  const posts = await fetch("/api/posts");
   const post = await posts.json();
   return post;
 }
