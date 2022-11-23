@@ -1,1 +1,47 @@
-[{"id":1,"name":"BasarJS","username":"bsggr78","password":"123456","image":"/peaco.jpg","country":"Turkey","bio":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus accusantium dolor odio sunt hic quod esse, nihil temporibus autem.","socials":{"twitter":"https://twitter.com/bsggr78","instagram":"https://instagram.com/bsggr78","linkedin":"https://linkedin.com/in/bsggr78","github":"https://github.com/bsggr78"}},{"id":2,"name":"BasarJS","username":"bsgegr78","password":"123456","image":"/peaco.jpg","country":"Turkey","bio":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus accusantium dolor odio sunt hic quod esse, nihil temporibus autem.","socials":{"twitter":"https://twitter.com/bsggr78","instagram":"https://instagram.com/bsggr78","linkedin":"https://linkedin.com/in/bsggr78","github":"https://github.com/bsggr78"}},{"id":3,"name":"BasarJS","username":"bsggr78","password":"123456","image":"/peaco.jpg","country":"Turkey","bio":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus accusantium dolor odio sunt hic quod esse, nihil temporibus autem.","socials":{"twitter":"https://twitter.com/bsggr78","instagram":"https://instagram.com/bsggr78","linkedin":"https://linkedin.com/in/bsggr78","github":"https://github.com/bsggr78"}}]
+[
+  {
+    "id": 1,
+    "name": "BasarJS",
+    "username": "bsggr78",
+    "password": "123456",
+    "image": "/peaco.jpg",
+    "country": "Turkey",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus accusantium dolor odio sunt hic quod esse, nihil temporibus autem.",
+    "socials": {
+      "twitter": "https://twitter.com/bsggr78",
+      "instagram": "https://instagram.com/bsggr78",
+      "linkedin": "https://linkedin.com/in/bsggr78",
+      "github": "https://github.com/bsggr78"
+    }
+  },
+  {
+    "id": 2,
+    "name": "test",
+    "username": "test",
+    "password": "123456",
+    "image": "/peaco.jpg",
+    "country": "Turkey",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus accusantium dolor odio sunt hic quod esse, nihil temporibus autem.",
+    "socials": {
+      "twitter": "https://twitter.com/bsggr78",
+      "instagram": "https://instagram.com/bsggr78",
+      "linkedin": "https://linkedin.com/in/bsggr78",
+      "github": "https://github.com/bsggr78"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Yusuf",
+    "username": "fusuf",
+    "password": "123456",
+    "image": "/peaco.jpg",
+    "country": "Turkey",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus accusantium dolor odio sunt hic quod esse, nihil temporibus autem.",
+    "socials": {
+      "twitter": "https://twitter.com/bsggr78",
+      "instagram": "https://instagram.com/bsggr78",
+      "linkedin": "https://linkedin.com/in/bsggr78",
+      "github": "https://github.com/bsggr78"
+    }
+  }
+]
