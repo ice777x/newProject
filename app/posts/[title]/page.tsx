@@ -17,7 +17,7 @@ async function getPosts(): Promise<[Post[], any]> {
 }
 
 export async function generateStaticParams() {
-  const [posts] = await getPosts();
+  const [posts, _] = await getPosts();
   return posts.map((post: Post) => ({title: post.id.toString()}));
 }
 export default async function Page({params}: any) {
