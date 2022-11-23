@@ -1,7 +1,7 @@
 import React from "react";
 
 async function getUsers() {
-  const users = await fetch("/api/users");
+  const users = await fetch("https://ice777dev.vercel.app/api/users");
   const result = await users.json();
   return result;
 }

@@ -6,13 +6,14 @@ import Link from "next/link";
 import RightBar from "../../../components/RightBar";
 
 async function getPosts(): Promise<[Post[], any]> {
-  return Promise.all([fetch("/api/posts"), fetch("/api/users")]).then(
-    async ([posts, users]) => {
-      const post: Post[] = await posts.json();
-      const user: any = await users.json();
-      return [post, user];
-    }
-  );
+  return Promise.all([
+    fetch("https://ice777dev.vercel.app/api/posts"),
+    fetch("https://ice777dev.vercel.app/api/users"),
+  ]).then(async ([posts, users]) => {
+    const post: Post[] = await posts.json();
+    const user: any = await users.json();
+    return [post, user];
+  });
 }
 
 export async function generateStaticParams() {

@@ -1,7 +1,7 @@
 import React from "react";
 
 async function getUsers() {
-  const posts = await fetch("/api/users/add", {
+  const posts = await fetch("https://ice777dev.vercel.app/api/users/add", {
     method: "POST",
     body: JSON.stringify({
       name: "BasarJS",
