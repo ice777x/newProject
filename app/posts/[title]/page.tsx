@@ -7,8 +7,8 @@ import RightBar from "../../../components/RightBar";
 
 async function getPosts(): Promise<[Post[], any]> {
   return Promise.all([
-    fetch("https://ice777dev.vercel.app/api/posts"),
-    fetch("https://ice777dev.vercel.app/api/users"),
+    fetch("http://localhost:3000/api/posts"),
+    fetch("http://localhost:3000/api/users"),
   ]).then(async ([posts, users]) => {
     const post: Post[] = await posts.json();
     const user: any = await users.json();
