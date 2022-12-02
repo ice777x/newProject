@@ -6,7 +6,10 @@
     "password": "123456",
     "image": "/peaco.jpg",
     "country": "Turkey",
+    "location": "Bursa",
+    "color": "cyan",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus accusantium dolor odio sunt hic quod esse, nihil temporibus autem.",
+    "joined": "2017-01-01",
     "socials": {
       "twitter": "https://twitter.com/bsggr78",
       "instagram": "https://instagram.com/bsggr78",
@@ -21,6 +24,8 @@
     "password": "123456",
     "image": "/peaco.jpg",
     "country": "Turkey",
+    "location": "Istanbul",
+    "joined": "2017-01-02",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus accusantium dolor odio sunt hic quod esse, nihil temporibus autem.",
     "socials": {
       "twitter": "https://twitter.com/bsggr78",
@@ -36,6 +41,9 @@
     "password": "123456",
     "image": "/peaco.jpg",
     "country": "Turkey",
+    "joined": "2017-01-03",
+    "location": "Sultangazi",
+    "color": "red",
     "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus accusantium dolor odio sunt hic quod esse, nihil temporibus autem.",
     "socials": {
       "twitter": "https://twitter.com/bsggr78",

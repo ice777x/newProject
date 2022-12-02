@@ -7,17 +7,17 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    icon: <FaHome />,
+    icon: <FaHome className="mr-0" />,
   },
   {
     path: "/list",
     name: "List",
-    icon: <RiFileList3Fill />,
+    icon: <RiFileList3Fill className="mr-0" />,
   },
   {
     path: "/bookmarks",
     name: "Bookmarks",
-    icon: <BsBookmarkFill />,
+    icon: <BsBookmarkFill className="mr-0" />,
   },
 ];
 export default function Sidebar() {
@@ -32,7 +32,7 @@ export default function Sidebar() {
             <div className="text-lg text-slate-700 dark:text-gray-300">
               {route.icon}
             </div>
-            <div className="text-lg tracking-wide text-slate-800 dark:text-gray-300 font-light">
+            <div className="text-lg  tracking-wide text-slate-800 dark:text-gray-300 font-light">
               {route.name}
             </div>
           </Link>

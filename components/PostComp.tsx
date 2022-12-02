@@ -7,7 +7,7 @@ const Tags = dynamic(() => import("./Tags"), {ssr: false});
 
 export default function PostComp({post}: {post: Post}) {
   return (
-    <div className="border dark:border-none mb-5 rounded-lg shadow-sm bg-white dark:bg-[#151F28]">
+    <div className="mb-5 rounded-lg shadow-xl bg-white dark:bg-[#031c32]">
       <div className="mb-5 p-4">
         <div className="flex mb-3">
           <div className="flex items-center">
@@ -34,7 +34,7 @@ export default function PostComp({post}: {post: Post}) {
               <Link
                 href={"/user/[name]"}
                 as={`/user/${post?.author?.username}`}
-                className="text-slate-800 dark:text-slate-100 font-medium transition duration-200 ease-in-out hover:text-indigo-600 dark:hover:text-indigo-400"
+                className="text-slate-800 dark:text-slate-100 font-medium transition duration-200 ease-in-out hover:text-blue-600 dark:hover:text-blue-500"
               >
                 {post.author.name}
               </Link>
@@ -46,7 +46,7 @@ export default function PostComp({post}: {post: Post}) {
         </div>
         <div className="pl-10">
           <Link href="/posts/[title]" as={`/posts/${post.id}`}>
-            <h1 className="text-3xl text-slate-800 dark:text-slate-200 font-bold hover:text-indigo-600 dark:hover:text-indigo-400/[0.80] transition duration-200 ease-linear">
+            <h1 className="text-3xl text-slate-800 break-words dark:text-slate-200 font-bold hover:text-blue-600 dark:hover:text-blue-500 transition-all duration-150 ease-linear">
               {post.title}
             </h1>
           </Link>

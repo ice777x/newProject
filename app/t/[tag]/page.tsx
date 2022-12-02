@@ -30,18 +30,20 @@ export default async function Page({params: {tag}}: {params: {tag: string}}) {
   const posts = await getPosts();
   const filteredPosts = posts.filter((post: Post) => post.tags.includes(tag));
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-[auto_75%] md:grid-cols-[15%_55%_auto] p-3 gap-2 md:gap-4 lg:gap-6">
-      <Sidebar />
-      <div className="">
-        <div className="mb-20">
-          <div>
-            {filteredPosts?.map((post: Post, i: number) => (
-              <PostComp post={post} key={i} />
-            ))}
+    <div className="container mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-[auto_75%] md:grid-cols-[15%_55%_auto] p-3 gap-2 md:gap-4 lg:gap-6">
+        <Sidebar />
+        <div className="">
+          <div className="mb-20">
+            <div>
+              {filteredPosts?.map((post: Post, i: number) => (
+                <PostComp post={post} key={i} />
+              ))}
+            </div>
           </div>
         </div>
+        <RightBar posts={posts} />
       </div>
-      <RightBar posts={posts} />
     </div>
   );
 }

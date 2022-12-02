@@ -13,7 +13,7 @@ export default function Reactions({data, horizontal = false}: any) {
     <div
       className={`${
         horizontal
-          ? "flex sm:hidden border-t  border-slate-300 dark:border-slate-800 fixed bottom-0 z-40 left-0 bg-white dark:bg-[#151F28] w-full justify-between items-center"
+          ? "flex sm:hidden border-t  border-slate-300 dark:border-slate-800 fixed bottom-0 z-40 left-0 bg-white dark:bg-[#031c32] w-full justify-between items-center"
           : "hidden sm:flex"
       } dark:text-white`}
     >

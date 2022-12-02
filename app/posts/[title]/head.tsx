@@ -2,8 +2,7 @@ import React from "react";
 import {redirect} from "next/navigation";
 
 async function getPosts() {
-  console.log(window.location.origin);
-  const posts = await fetch("/api/posts");
+  const posts = await fetch("http://localhost:3000/api/posts");
   const post = await posts.json();
   return post;
 }
@@ -19,5 +18,4 @@ export default async function Head({params: {title}}: any) {
       <title>{data.title}</title>
     </>
   );
-  //   return <title>{data && data.title}</title>;
 }
